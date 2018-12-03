@@ -12,6 +12,9 @@ function Queue() {
 		},
 		peek() {
 			return queue[0];
+		},
+		isEmpty() {
+			return queue.length === 0;
 		}
 	}
 }
@@ -33,3 +36,6 @@ console.log(q.dequeue())
 q.enqueue('Yooo')
 console.log(q.length)
 console.log(q.peek())
+console.log(q.isEmpty())
+console.log(q.dequeue())
+console.log(q.isEmpty())
